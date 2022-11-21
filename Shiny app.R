@@ -19,7 +19,7 @@ library(shinythemes)
 
 
 
-setwd("D:/Rresources")
+#setwd("D:/Rresources")
 
 
 ## Create a precise map of Boston
@@ -83,6 +83,8 @@ map2 #Boston map with crimes points on it
 #We can look into which district these crimes belong to and mark the positions on the map separately
 
 levels(as.factor(crime_position$district))
+
+distri <- levels(as.factor(crime_position$district))
 
 # We can see there are total 14 districts in this data
 
